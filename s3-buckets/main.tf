@@ -3,10 +3,11 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket1" {
-  bucket = "aluruarumullaa1"
+  # Nom exact demandé (en minuscules)
+  bucket = "eproject1"
 
   tags = {
-    Name        = "aluruarumullaa1"
+    Name        = "eproject1"
     Environment = "dev"
   }
 }
@@ -19,10 +20,11 @@ resource "aws_s3_bucket_versioning" "bucket1_versioning" {
 }
 
 resource "aws_s3_bucket" "bucket2" {
-  bucket = "arumullaaluruu1"
+  # Nom exact demandé (en minuscules)
+  bucket = "eprojectt1"
 
   tags = {
-    Name        = "arumullaaluruu1"
+    Name        = "eprojectt1"
     Environment = "dev"
   }
 }
